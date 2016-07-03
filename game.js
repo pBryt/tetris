@@ -263,10 +263,10 @@ game._drawNext = function() {
 
 	ctx.clearRect(0, 0, w, h);
 
-	const dx = (game.canvasNext.width - s[0].length * game.BLOCK_SIZE) / 2;
-	const dy = (game.canvasNext.height - s.length * game.BLOCK_SIZE) / 2;
+	// const dx = (game.canvasNext.width - s[0].length * game.BLOCK_SIZE) / 2;
+	// const dy = (game.canvasNext.height - s.length * game.BLOCK_SIZE) / 2;
 
-	ctx.translate(dx, dy);
+	// ctx.translate(dx, dy);
 
 	s.forEach((row, i) => row.forEach((cell, j) => {
 		if (!cell) return;
@@ -282,7 +282,7 @@ game._drawNext = function() {
 		ctx.stroke();
 	}));
 
-	ctx.translate(-dx, -dy);
+	// ctx.translate(-dx, -dy);
 
 	return game;
 };
